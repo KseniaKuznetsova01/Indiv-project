@@ -81,9 +81,9 @@ while suma1 > 0:                                                # Second discoun
 persent = (sale + years1) * suma                                # Discount calculation
 
 print(lc.SALE, "%.2f" % persent)                                # Output discount
-print(lc.EXIT,"%.2f" % (suma - persent))                        # Output the amount to be paid
+print(lc.EXIT, "%.2f" % (suma - persent))                        # Output the amount to be paid
 
 if suma > 10000:
     print(lc.CARD)                                              # Card
-    m = (random.randint(0,9999))
+    m = (random.randint(0, 9999))
     print(m)
