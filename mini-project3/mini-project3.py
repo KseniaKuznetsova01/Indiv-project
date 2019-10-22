@@ -11,6 +11,7 @@ suma1 = 0
 persent = 0
 sale = 0
 years1 = 0
+
 print(lc.OLD)
 years = int(input())
 name_month = ['JAN', 'FAB', 'MAR', 'APR', 'MAY', 'JUN',
@@ -20,22 +21,28 @@ name_month = ['JAN', 'FAB', 'MAR', 'APR', 'MAY', 'JUN',
 for month in name_month:
     print(month)
     print(lc.NUMBER)
-    n = int(input())                                           # Input the amount of goods (typs)
+    n = int(input())                                          # Input the amount of goods (typs)
+
     while n < 0:
         print(lc.NUMBER_0)
         n = int(input())
+
     while n != 0:
             n -= 1
             print(lc.PRICE)
             price = int(input())                               # Input price
+
             while price < 0:
                 print(lc.PRICE_O)
                 price = int(input())
+
             print(lc.NUMBER_01)                                # Input amount of goods
             number = int(input())
+
             while number < 0:
                 print(lc.NUMBER_01_O)
                 number = int(input())
+
             tr = number * price
             suma += tr
 
