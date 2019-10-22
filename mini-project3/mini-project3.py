@@ -46,6 +46,26 @@ for month in name_month:
             tr = number * price
             suma += tr
 
+    print(lc.DOP)
+    dop = str.lower(input())
+    if dop == 'да':
+            print(lc.PRICE)
+            price = int(input())                              # Input price
+
+            while price < 0:
+                print(lc.PRICE_O)
+                price = int(input())
+
+            print(lc.NUMBER_01)                                # Input amount of goods
+            number = int(input())
+
+            while number < 0:
+                print(lc.NUMBER_01_O)
+                number = int(input())
+
+            tr = number * price
+            suma += tr
+
 
 while years > 0:                                                # First discount calculation
     years1 += 0.0015
