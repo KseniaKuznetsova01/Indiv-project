@@ -21,7 +21,7 @@ name_month = ['JAN', 'FAB', 'MAR', 'APR', 'MAY', 'JUN',
 for month in name_month:
     print(month)
     print(lc.NUMBER)
-    n = int(input())                                          # Input the amount of goods (typs)
+    n = int(input())                                           # Input the amount of goods (typs)
 
     while n < 0:
         print(lc.NUMBER_0)
@@ -50,7 +50,7 @@ for month in name_month:
     dop = str.lower(input())
     if dop == 'да':
             print(lc.PRICE)
-            price = int(input())                              # Input price
+            price = int(input())                               # Input price
 
             while price < 0:
                 print(lc.PRICE_O)
